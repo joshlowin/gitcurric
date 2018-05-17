@@ -21,15 +21,15 @@ view: events {
     sql: ${TABLE}.created_at ;;
   }
 
-  dimension: type_id {
-    type: number
-    sql: ${TABLE}.type_id ;;
-  }
-
   dimension: user_id {
     type: number
     # hidden: yes
     sql: ${TABLE}.user_id ;;
+  }
+
+  dimension: type_id {
+    type: number
+    sql: ${TABLE}.type_id ;;
   }
 
   dimension: value {
