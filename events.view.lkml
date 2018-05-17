@@ -20,7 +20,12 @@ view: events {
     ]
     sql: ${TABLE}.created_at ;;
   }
-
+  
+  dimension: value {
+    type: string
+    sql: ${TABLE}.value ;;
+  }
+  
   dimension: user_id {
     type: number
     # hidden: yes
@@ -30,11 +35,6 @@ view: events {
   dimension: type_id {
     type: number
     sql: ${TABLE}.type_id ;;
-  }
-
-  dimension: value {
-    type: string
-    sql: ${TABLE}.value ;;
   }
 
   measure: count {
