@@ -21,15 +21,15 @@ view: orders {
     sql: ${TABLE}.created_at ;;
   }
 
-  dimension: status {
-    type: string
-    sql: ${TABLE}.status ;;
-  }
-
-  dimension: user_id {
+dimension: user_id {
     type: number
     # hidden: yes
     sql: ${TABLE}.user_id ;;
+  }
+  
+  dimension: status {
+    type: string
+    sql: ${TABLE}.status ;;
   }
 
   measure: count {
