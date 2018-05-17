@@ -20,16 +20,16 @@ view: events {
     ]
     sql: ${TABLE}.created_at ;;
   }
-  
-  dimension: value {
-    type: string
-    sql: ${TABLE}.value ;;
-  }
-  
+
   dimension: user_id {
     type: number
     # hidden: yes
     sql: ${TABLE}.user_id ;;
+  }
+
+  dimension: value {
+    type: string
+    sql: ${TABLE}.value ;;
   }
 
   dimension: type_id {
