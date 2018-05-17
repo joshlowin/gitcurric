@@ -6,16 +6,17 @@ view: products {
     type: number
     sql: ${TABLE}.id ;;
   }
-  
+
  dimension: category {
     type: string
     sql: ${TABLE}.category ;;
   }
-  
+
   dimension: brand {
     type: string
     sql: ${TABLE}.brand ;;
   }
+
 
   dimension: department {
     type: string
