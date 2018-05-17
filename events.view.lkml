@@ -27,6 +27,11 @@ view: events {
     sql: ${TABLE}.user_id ;;
   }
 
+  dimension: value {
+    type: string
+    sql: ${TABLE}.value ;;
+  }
+
   dimension: type_id {
     type: number
     sql: ${TABLE}.type_id ;;
