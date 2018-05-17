@@ -7,8 +7,7 @@ include: "*.view"
 include: "*.dashboard"
 
 datagroup: git_curric_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "4 hour"
+  max_cache_age: "3 hour"
 }
 
 persist_with: git_curric_default_datagroup
