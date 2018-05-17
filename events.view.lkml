@@ -37,12 +37,6 @@ view: events {
     sql: ${TABLE}.type_id ;;
   }
 
-  dimension: value {
-    type: string
-    sql: ${TABLE}.value ;;
-  }
-
-
   measure: count {
     type: count
     drill_fields: [id, users.first_name, users.last_name, users.id]
