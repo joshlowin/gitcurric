@@ -21,17 +21,17 @@ view: orders {
     sql: ${TABLE}.created_at ;;
   }
 
- dimension: status {
-    type: string
-    sql: ${TABLE}.status ;;
-  }
-
 dimension: user_id {
     type: number
     # hidden: yes
     sql: ${TABLE}.user_id ;;
   }
   
+  dimension: status {
+    type: string
+    sql: ${TABLE}.status ;;
+  }
+ 
   measure: count {
     type: count
     drill_fields: [id, users.first_name, users.last_name, users.id, order_items.count]
