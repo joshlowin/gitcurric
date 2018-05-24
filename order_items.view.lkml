@@ -7,16 +7,16 @@ view: order_items {
     sql: ${TABLE}.id ;;
   }
 
+    dimension: order_id {
+    type: number
+    # hidden: yes
+    sql: ${TABLE}.order_id ;;
+  }
+  
   dimension: inventory_item_id {
     type: number
     # hidden: yes
     sql: ${TABLE}.inventory_item_id ;;
-  }
-
-  dimension: order_id {
-    type: number
-    # hidden: yes
-    sql: ${TABLE}.order_id ;;
   }
 
   dimension_group: returned {
