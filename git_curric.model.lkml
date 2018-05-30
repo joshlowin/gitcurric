@@ -1,6 +1,6 @@
 connection: "thelook"
 
-# include all the views, all the looks!! Most of the looks
+# include all the views, all the looks!! Most of the looks, mostly
 include: "*.view"
 
 # include all the dashboards
